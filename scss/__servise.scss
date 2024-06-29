@@ -1,0 +1,66 @@
+@use "./_color_font";
+@use "./_normalize";
+
+.services {
+  background: linear-gradient( $color-gradient__super-soft);
+}
+
+.services-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  @include font-h3__caps;
+  color: $color-active__regular;
+}
+
+.title {
+  @include font-hero;
+}
+
+.advantages-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .advantages-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.advantages-icon {
+  display: flex;
+  width: 82px;
+  height: 82px;
+  padding: 14px;
+  background-color: $color-white;
+  border-radius: 24px;
+  margin-bottom: 30px;
+}
+
+.advantages-title {
+  @include font-h3;
+  color: $color-active__regular;
+  margin-bottom: 15px;
+}
+
+.advantages-paragraph {
+  @include font-paragrapf;
+  color: $color-white;
+}

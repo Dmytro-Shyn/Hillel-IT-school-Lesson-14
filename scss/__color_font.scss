@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 // COLORS
 $color-black: #000000;
 $color-white: #ffffff;
@@ -34,6 +35,8 @@ $color-gradient__red-text: (90deg, #F0145A 0.84%, #EF8080 99.96%);
     line-height: normal;
     background: linear-gradient($color-gradient__red-text);
     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
 };
 
 @mixin font-h2 {

@@ -1,9 +1,41 @@
+@import "./_normalize";
 @import "./_color_font";
+@import "./_servise";
 
-*{
-  box-sizing: border-box;
+.h1{
+  @include font-hero;
 }
 
-h1{
-  @include font-hero;
+.h2{
+  @include font-h2;
+}
+
+.h3{
+  @include font-h3;
+}
+
+.h3-caps{
+  @include font-h3__caps;
+}
+
+.h4{
+  @include font-h4;
+}
+
+.paragraph{
+  @include font-paragrapf;
+}
+
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  width: 315px;
+}
+
+@media (min-width: 768px) {
+  .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 648px;
+  }
 }
