@@ -1,5 +1,9 @@
-@use "./_color_font";
+@import "./_color_font";
 
 *{
   box-sizing: border-box;
+}
+
+h1{
+  @include font-hero;
 }
