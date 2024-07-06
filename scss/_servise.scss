@@ -1,13 +1,18 @@
-@use "./_color_font";
-@use "./_normalize";
+@use "../scss/_color_font";
+@use "../icon-font/icon-style";
 
 .services {
   background: linear-gradient( $color-gradient__super-soft);
+  margin-bottom: 60px;
 }
 
 .services-container{
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  max-width: 1600px;
 }
 
 .title-container {
@@ -31,21 +36,19 @@
   gap: 30px;
 }
 
-@media (min-width: 768px) {
-  .advantages-container {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .advantages {
   display: flex;
+  flex: 1 0 0;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: flex-start;
+  min-width: 260px;
+  max-width: 500px;
 }
 
 .advantages-icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 82px;
   height: 82px;
   padding: 14px;
@@ -63,4 +66,17 @@
 .advantages-paragraph {
   @include font-paragrapf;
   color: $color-white;
+}
+
+@media (min-width: 768px) {
+  .advantages-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .advantages {
+    flex: 1 0 26%;
+  }
 }
