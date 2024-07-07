@@ -1,0 +1,10 @@
+[33m3f75964[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m Add team section with team member card and styles. Fix publication date in trust us section
+[33m0f29626[m Add separator styling and update publication card descriptions in HTML and SCSS files
+[33mc39ac58[m Add publication section to the webpage design
+[33m50d66c0[m Update grid-template-rows to repeat 3 instead of 4 in style.css
+[33m1bc0efc[m Update trust-us grid to have 3 rows instead of 4 rows
+[33m64b1aa6[m Add new section _trust_us.scss
+[33md638e49[m Update website styles and structure for services section
+[33m2a453d5[m Add Montserrat font and hero style for h1 element
+[33md3d7f9e[m Add global box-sizing property and color variables for main and accent colors
+[33m9356f8a[m Add CSS and SCSS files, along with source map for CSS
