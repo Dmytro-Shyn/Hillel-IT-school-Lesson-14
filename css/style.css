@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
   box-sizing: border-box;
 }
@@ -91,7 +92,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 60px;
-  max-width: 1600px;
 }
 
 .title-container {
@@ -280,6 +280,10 @@ a {
   .wrapper-for-absolute {
     max-width: 1600px;
   }
+  .company-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
 }
 .partners-logo {
   display: flex;
@@ -287,6 +291,89 @@ a {
   width: 220px;
   align-items: center;
   justify-content: center;
+}
+
+.publication {
+  padding-top: 30px;
+  background-color: #F5F5FA;
+}
+
+.publication-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.publication-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .publication-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .publication-card:nth-child(3) {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1024px) {
+  .publication-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .publication-card:nth-child(3) {
+    grid-column: auto;
+  }
+}
+.publication-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.publication-card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+}
+
+.publication-card-title {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #323264;
+  color: #24A3FF;
+}
+
+.publication-card-data {
+  color: #B3B3BA;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.publication-card-description {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.publication-img {
+  object-fit: cover;
+  height: 200px;
 }
 
 .h1 {

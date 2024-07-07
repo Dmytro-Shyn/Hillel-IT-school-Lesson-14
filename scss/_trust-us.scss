@@ -91,7 +91,10 @@
     // margin-right: auto;
     max-width: 1600px;
   }
-  
+  .company-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
 }
 
 .partners-logo {
