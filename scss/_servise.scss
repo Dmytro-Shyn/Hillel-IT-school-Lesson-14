@@ -1,8 +1,11 @@
 @use "../scss/_color_font";
 @use "../icon-font/icon-style";
 
-.services {
+.hero {
   background: linear-gradient( $color-gradient__super-soft);
+}
+
+.services {
   margin-bottom: 60px;
 }
 
