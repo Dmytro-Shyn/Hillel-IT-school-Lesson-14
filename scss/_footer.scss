@@ -91,6 +91,10 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media (min-width: 768px) {
+    text-align: end;
+    min-width: 50%;
+  }
 }
 .dot-6px{
   display: none;
