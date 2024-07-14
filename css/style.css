@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
   box-sizing: border-box;
 }
@@ -303,6 +304,7 @@ a {
 
 .publication {
   padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #F5F5FA;
 }
 
@@ -370,14 +372,6 @@ a {
   text-transform: uppercase;
 }
 
-.separator {
-  height: 4px;
-  width: 100%;
-  border: none;
-  background-color: #E6E6F0;
-  margin: 0;
-}
-
 .publication-card-description {
   color: #000;
   font-family: Montserrat;
@@ -390,6 +384,14 @@ a {
 .publication-img {
   object-fit: cover;
   height: 200px;
+}
+
+.separator {
+  height: 4px;
+  width: 100%;
+  border: none;
+  background-color: #E6E6F0;
+  margin: 0;
 }
 
 .team {
@@ -631,6 +633,124 @@ a {
   font-weight: 400;
   line-height: 30px; /* 157.895% */
   color: #ffffff;
+}
+
+footer {
+  background-color: #F5F5FA;
+}
+
+.footer-separator {
+  height: 2px;
+  width: 100%;
+  border: none;
+  background-color: #E6E6F0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.footer-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .footer-conteiner {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.addres-on-map {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .addres-on-map {
+    flex-direction: row;
+    min-width: 50%;
+  }
+}
+
+.face-tel-mail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .face-tel-mail {
+    flex-direction: row;
+    padding: 0px;
+    margin-top: 21px;
+    order: 1;
+  }
+}
+
+.addres {
+  color: #323264;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.on-map {
+  color: #24A3FF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tell-text {
+  color: #46466E;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mail-addres {
+  color: #24A3FF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.low-company {
+  color: #B3B3BA;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dot-6px {
+  display: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #B3B3BA;
+}
+@media (min-width: 768px) {
+  .dot-6px {
+    display: block;
+  }
 }
 
 .h1 {

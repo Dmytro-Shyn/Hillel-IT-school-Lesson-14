@@ -2,6 +2,7 @@
 
 .publication {
   padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #F5F5FA;
 }
 
@@ -66,14 +67,6 @@
   text-transform: uppercase;
 }
 
-.separator{
-  height: 4px;
-  width: 100%;
-  border: none;
-  background-color: #E6E6F0;
-  margin: 0;
-}
-
 .publication-card-description {
   color: #000;
   font-family: Montserrat;
@@ -86,4 +79,12 @@
 .publication-img{
   object-fit: cover;
   height: 200px;
+}
+
+.separator{
+  height: 4px;
+  width: 100%;
+  border: none;
+  background-color: #E6E6F0;
+  margin: 0;
 }
