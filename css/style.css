@@ -5,6 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 * {
   box-sizing: border-box;
 }
@@ -526,6 +527,16 @@ a {
   margin-bottom: 60px;
 }
 
+.wrapper-for-consistent {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .wrapper-for-consistent {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 .consistent-container {
   display: flex;
   flex-direction: column;
@@ -558,10 +569,12 @@ a {
 
 .consistent-separator {
   height: 4px;
-  width: 100%;
+  width: auto;
   border: none;
   background-color: #E6E6F0;
   margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 @media (min-width: 1024px) {
   .consistent-separator {
@@ -607,6 +620,14 @@ a {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 768px) {
+  .consistent-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 @media (min-width: 1024px) {
   .consistent-content {
@@ -758,6 +779,67 @@ footer {
   .dot-6px {
     display: block;
   }
+}
+
+.hero-screen {
+  min-height: 100vh;
+  background: center no-repeat url(../image/hero_h.png);
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .hero-screen {
+    background-size: contain;
+  }
+}
+
+.header-mobile {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+}
+
+.header-mobile-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: rgba(245, 245, 250, 0.2);
+}
+
+.lang-list {
+  display: flex;
+  gap: 10px;
+}
+.lang-list li {
+  color: #ffffff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.header-mob-tel {
+  color: #ffffff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-mobile-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+  padding: 0px 15px;
 }
 
 .h1 {

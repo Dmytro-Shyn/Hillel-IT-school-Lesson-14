@@ -4,6 +4,13 @@
   padding-top: 60px;
   margin-bottom: 60px;
 }
+.wrapper-for-consistent{
+  width: 100%;
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .consistent-container {
   display: flex;
   flex-direction: column;
@@ -34,10 +41,12 @@
 }
 .consistent-separator{
   height: 4px;
-  width: 100%;
+  width: auto;
   border: none;
   background-color: #E6E6F0;
   margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
   @media (min-width: 1024px) {
     &{
      display: none;
@@ -80,6 +89,12 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  @media (min-width: 768px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   @media (min-width: 1024px) {
     &{
       max-width: calc(50% - 30px);
