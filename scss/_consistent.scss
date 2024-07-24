@@ -3,12 +3,19 @@
 .consistent {
   padding-top: 60px;
   margin-bottom: 60px;
+  transition: transform 0.5s ease-in-out;
 }
 .wrapper-for-consistent{
   width: 100%;
+  max-width: 1600px;
   @media (min-width: 768px) {
     padding-left: 60px;
     padding-right: 60px;
+  }
+  @media (min-width: 1920px){
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
   }
 }
 .consistent-container {
@@ -26,8 +33,16 @@
 .consistent-list {
   display: flex;
   overflow-x: auto;
+  &:first-child {
+    padding-left: 30px;
+  }
   &::-webkit-scrollbar{
     width: 0;
+  }
+  @media (min-width: 768px){
+    &:first-child {
+      padding-left: 0px;
+    }
   }
   @media (min-width: 1024px) {
     &{
@@ -47,6 +62,10 @@
   margin: 0;
   padding-left: 30px;
   padding-right: 30px;
+  @media (max-width: 768px) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   @media (min-width: 1024px) {
     &{
      display: none;
@@ -97,7 +116,7 @@
   }
   @media (min-width: 1024px) {
     &{
-      max-width: calc(50% - 30px);
+      max-width: calc(58% - 30px);
       flex-grow: 1;
       justify-content: center;
     } 

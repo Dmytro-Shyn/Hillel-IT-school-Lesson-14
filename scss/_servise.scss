@@ -1,12 +1,32 @@
 @use "../scss/_color_font";
-@use "../icon-font/icon-style";
 
 .hero {
   background: linear-gradient( $color-gradient__super-soft);
 }
 
 .services {
+  position: relative;
   margin-bottom: 60px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #CACADB;
+    left: 20px;
+    right: 20px;
+    bottom: -10px;
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #E7E7F2;
+    left: 40px;
+    right: 40px;
+    bottom: -20px;
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+  }
 }
 
 .services-container{
