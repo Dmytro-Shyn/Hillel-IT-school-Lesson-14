@@ -1,0 +1,35 @@
+{
+  "name": "hlegal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "reset-project": "rm -rf node_modules && rm -rf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmytro-Shyn/Hillel-IT-school-Lesson-14.git"
+  },
+  "author": "dmytroshynkarenko26@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmytro-Shyn/Hillel-IT-school-Lesson-14/issues"
+  },
+  "homepage": "https://github.com/Dmytro-Shyn/Hillel-IT-school-Lesson-14#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^10.0.0"
+  },
+  "browserslist": [
+    "last 5 version"
+  ]
+}
