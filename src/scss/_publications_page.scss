@@ -153,3 +153,16 @@
   padding: 10px 15px;
   background-color: $color-grey__text;
 }
+
+.block-publication {
+  background: #F5F5FA;
+}
+
+
+.publication-cards{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px; 
+}

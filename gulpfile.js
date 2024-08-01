@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const postcss = require('gulp-postcss');
 const htmlmin = require('gulp-htmlmin');
 const browserSync = require('browser-sync').create();
+const { exec } = require('child_process');
 
 function css() {
   return gulp
@@ -28,6 +29,14 @@ function clear() {
   return gulp.src('build', { read: false}).pipe(clean());
 }
 
+function tailwind(cb) {
+  exec('npx tailwindcss -i ./src/scss/input.css -o ./src/scss/output.css', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.error(stderr);
+    cb(err);
+  });
+}
+
 function copy() {
   return gulp
     .src("./src/assets/**/*", {
@@ -38,6 +47,14 @@ function copy() {
 function watching() {
   gulp.watch("./src/scss/**/*.scss", css);
   gulp.watch("./src/*.html", html).on('change', browserSync.reload);
+  gulp.watch('./src/input.css', tailwind).on('change', browserSync.reload);
+}
+
+function tailwindWatch() {
+  exec('npx tailwindcss -i ./src/scss/input.css -o ./src/scss/output.css --watch', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.error(stderr);
+  });
 }
 
 function server() {
@@ -58,5 +75,5 @@ exports.css = css;
 exports.clear = clear;
 exports.start = gulp.series(
 clear,
-gulp.parallel(css, html, copy),
-gulp.parallel(watching, server));
+gulp.parallel(css, html, copy, tailwind),
+gulp.parallel(watching, tailwindWatch,  server));
