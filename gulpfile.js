@@ -73,6 +73,10 @@ function defaultTask(cb) {
 exports.default = defaultTask;
 exports.css = css;
 exports.clear = clear;
+exports.build = gulp.series(
+  clear,
+  gulp.parallel(css, html, copy, tailwind),
+);
 exports.start = gulp.series(
 clear,
 gulp.parallel(css, html, copy, tailwind),
