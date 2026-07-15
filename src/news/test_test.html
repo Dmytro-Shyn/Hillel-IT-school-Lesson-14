@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новини</title>
+
+    <meta name="description" content="Новоушицький коледж" />
+    <meta
+      name="keywords"
+      content="Новини, Новоушицький коледж, ВСП НФК ЗВО ПДУ"
+    />
+    <meta name="author" content="Новоушицький фаховий коледж" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <div class="flex items-center gap-2">
+          <a href="https://www.ntpu.org.ua/" class="text-xs text-grey-03">
+            Головна
+          </a>
+          <p class="text-xs text-grey-03">/</p>
+          <span class="text-xs text-grey-05">Новини</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-page">
+      <div class="wrapper flex flex-col gap-6">
+        <h1 class="text-6xl text-grey-02">Новини</h1>
+
+        <!-- ===== LIGHTBOX IMAGE ===== -->
+
+        <!-- hidden checkbox -->
+        <input type="checkbox" id="img-modal-1" class="peer hidden" />
+
+        <!-- preview image -->
+        <label for="img-modal-1" class="cursor-zoom-in">
+          <img
+            class="rounded-xl transition hover:scale-[1.02] mb-16"
+            src="../image/news/test_test/1.jpg"
+            alt="Новина"
+          />
+        </label>
+
+        <!-- fullscreen overlay -->
+        <div
+          class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition"
+        >
+          <!-- close area -->
+          <label
+            for="img-modal-1"
+            class="absolute inset-0 cursor-zoom-out"
+          ></label>
+
+          <!-- full image -->
+          <img
+            src="../image/news/test_test/1.jpg"
+            alt="Новина"
+            class="w-auto h-auto max-w-screen max-h-screen object-contain rounded-xl shadow-2xl"
+          />
+        </div>
+
+        <!-- ===== /LIGHTBOX IMAGE ===== -->
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="../js/componets.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
